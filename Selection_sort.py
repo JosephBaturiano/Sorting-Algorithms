@@ -1,16 +1,18 @@
 
-def sort(nums):
+def select_sort(random_num):
 
     for i in range(9):
         minpos = i
         for j in range(i, 10):
-            if nums[j] < nums[minpos]:
+            if random_num[j] < random_num[minpos]:
                 minpos = j
 
-        temp = nums[i]
-        nums[i] = nums[minpos]
-        nums[minpos] = temp
-        print(nums)
+        temp = random_num[i]
+        random_num[i] = random_num[minpos]
+        random_num[minpos] = temp
+        print(random_num)
 
 
-nums = [66, 35, 88, 93, 28, 59, 97, 69, 62, 9]
+random_num = [66, 35, 88, 93, 28, 59, 97, 69, 62, 9]
+select_sort(random_num)
+print(random_num)
