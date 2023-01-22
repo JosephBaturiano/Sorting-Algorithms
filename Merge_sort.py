@@ -6,5 +6,8 @@ def merge_sort(arr):
         merge_sort(left_arr)
         merge_sort(right_arr)
 
+        i = 0
+        j = 0
+
 
 random_num = [66, 35, 88, 93, 28, 59, 97, 69, 62, 9]
