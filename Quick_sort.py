@@ -3,6 +3,7 @@ def swap(a, b, arr):
         tmp = arr[a]
         arr[a] = arr[b]
         arr[b] = tmp
+        print(random_num)
 
 
 def quick_sort(random_num, start, end):
@@ -33,4 +34,3 @@ def partition(random_num, start, end):
 
 random_num = [66, 35, 88, 93, 28, 59, 97, 69, 62, 9]
 quick_sort(random_num, 0, len(random_num)-1)
-print(random_num)
