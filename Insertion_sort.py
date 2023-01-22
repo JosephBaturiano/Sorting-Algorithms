@@ -6,6 +6,7 @@ def insertion_sort(random_num):
             random_num[j+1] = random_num[j]
             j = j - 1
         random_num[j+1] = sorted_area
+        print(random_num)
 
 
 random_num = [66, 35, 88, 93, 28, 59, 97, 69, 62, 9]
