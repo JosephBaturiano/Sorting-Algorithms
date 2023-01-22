@@ -1,6 +1,9 @@
-def sort(random_num):
-    for i in range(5):
-    minpos = i
+
+def sort(nums):
+
+    for i in range(9):
+        minpos = i
+        for j in range(i, 10):
 
 
-random_num = [66, 35, 88, 93, 28, 59, 97, 69, 62, 9]
+nums = [66, 35, 88, 93, 28, 59, 97, 69, 62, 9]
