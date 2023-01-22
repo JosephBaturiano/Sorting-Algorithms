@@ -8,7 +8,7 @@ def merge_sort(arr):
 
         i = 0
         j = 0
-        while
+        while i < len(left_arr) and j < len(right_arr):
 
 
 random_num = [66, 35, 88, 93, 28, 59, 97, 69, 62, 9]
