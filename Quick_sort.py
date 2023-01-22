@@ -5,30 +5,32 @@ def swap(a, b, arr):
         arr[b] = tmp
 
 
-def quick_sort(elements, start, end):
+def quick_sort(random_num, start, end):
     if start < end:
-        pi = partition(elements, start, end)
-        quick_sort(elements, start, pi-1)
-        quick_sort(elements, pi+1, end)
+        pi = partition(random_num, start, end)
+        quick_sort(random_num, start, pi-1)
+        quick_sort(random_num, pi+1, end)
 
 
-def partition(elements, start, end):
+def partition(random_num, start, end):
     pivot_index = start
-    pivot = elements[pivot_index]
+    pivot = random_num[pivot_index]
 
     while start < end:
-        while start < len(elements) and elements[start] <= pivot:
+        while start < len(random_num) and random_num[start] <= pivot:
             start += 1
 
-        while elements[end] > pivot:
+        while random_num[end] > pivot:
             end -= 1
 
         if start < end:
-            swap(start, end, elements)
+            swap(start, end, random_num)
 
-    swap(pivot_index, end, elements)
+    swap(pivot_index, end, random_num)
 
     return end
 
 
 random_num = [66, 35, 88, 93, 28, 59, 97, 69, 62, 9]
+quick_sort(random_num, 0, len(random_num)-1)
+print(random_num)
