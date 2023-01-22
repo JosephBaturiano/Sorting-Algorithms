@@ -18,5 +18,14 @@ def merge_sort(arr):
                 j += 1
             k += 1
 
+        while i < len(left_arr):
+            arr[k] = left_arr[i]
+            i += 1
+            k += 1
+        while j < len(right_arr):
+            arr[k] = right_arr[j]
+            j += 1
+            k += 1
+
 
 random_num = [66, 35, 88, 93, 28, 59, 97, 69, 62, 9]
