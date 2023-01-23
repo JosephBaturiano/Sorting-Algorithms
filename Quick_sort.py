@@ -1,3 +1,9 @@
+def quick_sort(numbers, left, right):
+    if left < right:
+        partition_pos = partition(numbers, left, right)
+        quick_sort(numbers, left,  partition_pos - 1)
+        quick_sort(numbers, partition_pos + 1, right)
+
 
 def partition(random_num, left, right):
     i = left
