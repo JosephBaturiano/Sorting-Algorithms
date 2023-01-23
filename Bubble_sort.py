@@ -9,4 +9,6 @@ def bubble_sort(random_num):
 
 
 random_num = [66, 35, 88, 93, 28, 59, 97, 69, 62, 9]
+print("Unsorted array:", random_num, "\n")
+print("<<<Process of sorting the array>>>")
 bubble_sort(random_num)
