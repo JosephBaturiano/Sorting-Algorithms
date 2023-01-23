@@ -6,9 +6,9 @@ def merge_sort(arr):
         merge_sort(left_arr)
         merge_sort(right_arr)
 
-        i = 0
-        j = 0
-        k = 0
+        i = 0  # left array index
+        j = 0  # right array index
+        k = 0  # merged index
         while i < len(left_arr) and j < len(right_arr):
             if left_arr[i] < right_arr[j]:
                 arr[k] = left_arr[i]
