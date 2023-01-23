@@ -1,8 +1,8 @@
-def quick_sort(numbers, left, right):
+def quick_sort(random_num, left, right):
     if left < right:
-        partition_pos = partition(numbers, left, right)
-        quick_sort(numbers, left,  partition_pos - 1)
-        quick_sort(numbers, partition_pos + 1, right)
+        partition_pos = partition(random_num, left, right)
+        quick_sort(random_num, left,  partition_pos - 1)
+        quick_sort(random_num, partition_pos + 1, right)
 
 
 def partition(random_num, left, right):
@@ -18,12 +18,15 @@ def partition(random_num, left, right):
 
         if i < j:
             random_num[i], random_num[j] = random_num[j], random_num[i]
+            print("\t\t\t ", random_num)
 
     if random_num[i] > pivot:
         random_num[i], random_num[right] = random_num[right], random_num[i]
-    print("\t\t\t ", random_num)
+        print("\t\t\t ", random_num)
     return i
 
 
 random_num = [66, 35, 88, 93, 28, 59, 97, 69, 62, 9]
+print("Unsorted array:", random_num, "\n")
+print("<<<Process of sorting the array>>>")
 quick_sort(random_num, 0, len(random_num) - 1)
